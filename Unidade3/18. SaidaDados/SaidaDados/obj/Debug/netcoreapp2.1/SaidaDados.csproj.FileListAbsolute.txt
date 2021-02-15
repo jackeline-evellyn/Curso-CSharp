@@ -1,0 +1,11 @@
+C:\Users\Jackeline Evellyn\source\repos\SaidaDados\SaidaDados\bin\Debug\netcoreapp2.1\SaidaDados.deps.json
+C:\Users\Jackeline Evellyn\source\repos\SaidaDados\SaidaDados\bin\Debug\netcoreapp2.1\SaidaDados.runtimeconfig.json
+C:\Users\Jackeline Evellyn\source\repos\SaidaDados\SaidaDados\bin\Debug\netcoreapp2.1\SaidaDados.runtimeconfig.dev.json
+C:\Users\Jackeline Evellyn\source\repos\SaidaDados\SaidaDados\bin\Debug\netcoreapp2.1\SaidaDados.dll
+C:\Users\Jackeline Evellyn\source\repos\SaidaDados\SaidaDados\bin\Debug\netcoreapp2.1\SaidaDados.pdb
+C:\Users\Jackeline Evellyn\source\repos\SaidaDados\SaidaDados\obj\Debug\netcoreapp2.1\SaidaDados.csprojAssemblyReference.cache
+C:\Users\Jackeline Evellyn\source\repos\SaidaDados\SaidaDados\obj\Debug\netcoreapp2.1\SaidaDados.csproj.CoreCompileInputs.cache
+C:\Users\Jackeline Evellyn\source\repos\SaidaDados\SaidaDados\obj\Debug\netcoreapp2.1\SaidaDados.AssemblyInfoInputs.cache
+C:\Users\Jackeline Evellyn\source\repos\SaidaDados\SaidaDados\obj\Debug\netcoreapp2.1\SaidaDados.AssemblyInfo.cs
+C:\Users\Jackeline Evellyn\source\repos\SaidaDados\SaidaDados\obj\Debug\netcoreapp2.1\SaidaDados.dll
+C:\Users\Jackeline Evellyn\source\repos\SaidaDados\SaidaDados\obj\Debug\netcoreapp2.1\SaidaDados.pdb
