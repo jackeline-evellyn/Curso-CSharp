@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace _52._Sobrecarga
+namespace _53._Sintaxe_alternativa
 {
     class Program
     {
@@ -13,9 +13,10 @@ namespace _52._Sobrecarga
             string nome = Console.ReadLine();
             Console.Write("Preço: ");
             double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            
+
             Produto produto = new Produto(nome, preco);
             // gracas ao construtor é obrigatorio passar os dados
+            Produto produto1 = new Produto { Nome = "TV", Preco = 500.00, Quantidade = 10};
 
             Console.WriteLine();
             Console.WriteLine("Dados do produto: " + produto);
