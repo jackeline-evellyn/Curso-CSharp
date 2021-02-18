@@ -11,33 +11,15 @@ namespace _55.Encapsulamento
              * operações seguras que mantenham em estado conscistente
              * Ou seja, disponibilizar ao usuário apenas as operações básicas
             */
+            Produto produto = new Produto("TV", 500.00, 10);
+
+            produto.SetNome("TV 4K");
+            Console.WriteLine(produto.GetNome()) ;
+            Console.WriteLine(produto.GetPreco());
+            Console.WriteLine(produto.GetQuantidade());
 
 
-
-            Console.WriteLine("Entre os dados do produto:");
-            Console.Write("Nome: ");
-            string nome = Console.ReadLine();
-            Console.Write("Preço: ");
-            double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.Write("Quantidade no estoque: ");
-            int quantidade = int.Parse(Console.ReadLine());
-
-            Produto p = new Produto(nome, preco, quantidade);
-
-            Console.WriteLine();
-            Console.WriteLine("Dados do produto: " + p);
-            Console.WriteLine();
-            Console.Write("Digite o número de produtos a ser adicionado ao estoque: ");
-            int qte = int.Parse(Console.ReadLine());
-            p.AdicionarProdutos(qte);
-            Console.WriteLine();
-            Console.WriteLine("Dados atualizados: " + p);
-            Console.WriteLine();
-            Console.Write("Digite o número de produtos a ser removido do estoque: ");
-            qte = int.Parse(Console.ReadLine());
-            p.RemoverProdutos(qte);
-            Console.WriteLine();
-            Console.WriteLine("Dados atualizados: " + p);
+            
         }
     }
 }

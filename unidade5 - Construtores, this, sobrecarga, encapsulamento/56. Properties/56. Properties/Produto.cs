@@ -1,6 +1,8 @@
-﻿using System.Globalization;
-
-namespace _55.Encapsulamento
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Globalization;
+namespace _56._Properties
 {
     class Produto
     {
@@ -15,26 +17,26 @@ namespace _55.Encapsulamento
             _preco = preco;
             _quantidade = quantidade;
         }
-        public string GetNome()
+        //Properties são definições de métodos encapsulados
+        public string Nome
         {
-            return _nome;
-        }
-        public void SetNome (string nome) //metodo void pois nao retorna nada
-        {
-            //a vantagem de usar encapsulamento é que pode colocar uma lógica
-
-            if(nome != null && nome.Length> 1){
-                _nome = nome; // recebe o nome colocado
-
+            get { return _nome; }
+            set
+            {
+                if(value != null && value.Length > 1)
+                {
+                    _nome = value;
+                }
             }
         }
-        public double GetPreco()
+        
+        public double Preco
         {
-            return _preco;
+            get { return _preco; }
         }
-        public int GetQuantidade()
+       public int Quantidade
         {
-            return _quantidade;
+            get { return _quantidade; }
         }
         public double ValorTotalEmEstoque()
         {
