@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "58. Ordem sugerida", "58. Ordem sugerida\58. Ordem sugerida.csproj", "{3ECE1123-EB9E-4CF0-B6C5-7C4D2F5CC071}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3ECE1123-EB9E-4CF0-B6C5-7C4D2F5CC071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ECE1123-EB9E-4CF0-B6C5-7C4D2F5CC071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ECE1123-EB9E-4CF0-B6C5-7C4D2F5CC071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ECE1123-EB9E-4CF0-B6C5-7C4D2F5CC071}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7C408CA-D080-41F2-A52D-D126EBBD5161}
+	EndGlobalSection
+EndGlobal
