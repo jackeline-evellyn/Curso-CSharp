@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "71 . Exercicio Fixacao - vetores", "71 . Exercicio Fixacao - vetores\71 . Exercicio Fixacao - vetores.csproj", "{31C6C108-A4F1-4396-AF7E-E4AF227EE6FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31C6C108-A4F1-4396-AF7E-E4AF227EE6FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31C6C108-A4F1-4396-AF7E-E4AF227EE6FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31C6C108-A4F1-4396-AF7E-E4AF227EE6FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31C6C108-A4F1-4396-AF7E-E4AF227EE6FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {915343BE-EE7A-4C03-8BFB-FC748FA88E39}
+	EndGlobalSection
+EndGlobal
