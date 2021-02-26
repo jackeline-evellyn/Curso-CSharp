@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>_72._Modificadores_de_parametro_params</RootNamespace>
+    <RootNamespace>_77._List_listas_2</RootNamespace>
   </PropertyGroup>
 
 </Project>

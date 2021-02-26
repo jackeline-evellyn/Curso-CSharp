@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _72._Modificadores_de_parametro_params
+namespace _72._Modificadores_de_parametros__params
 {
     class Program
     {
