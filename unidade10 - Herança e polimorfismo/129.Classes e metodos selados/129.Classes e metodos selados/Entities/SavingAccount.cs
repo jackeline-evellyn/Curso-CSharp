@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _129.Classes_e_metodos_selados.Entities
 {
-    sealed class SavingAccount : Account
+     class SavingAccount : Account
     {
         public double InterestRate { get; set; }
 
@@ -21,6 +21,12 @@ namespace _129.Classes_e_metodos_selados.Entities
         public void UpdateBalance()
         {
             Balance += Balance * InterestRate;
+        }
+        //Não é possível sobreescrever o método selado
+        public sealed override void Withdraw(double amount)
+        {
+            base.Withdraw(amount);
+            Balance -= 2.0;
         }
 
     }

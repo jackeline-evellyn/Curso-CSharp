@@ -21,7 +21,7 @@ namespace _129.Classes_e_metodos_selados.Entities
             Holder = holder;
             Balance = balance;
         }
-        public void Withdraw(double amount)
+        public virtual void Withdraw(double amount)
         {
             Balance += amount;
         }

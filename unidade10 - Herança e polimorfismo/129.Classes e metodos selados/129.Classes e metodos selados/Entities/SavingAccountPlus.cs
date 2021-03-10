@@ -4,7 +4,8 @@ using System.Text;
 
 namespace _129.Classes_e_metodos_selados.Entities
 {
-    class SavingAccountPlus
+    class SavingAccountPlus: SavingAccount
     {
+         
     }
 }
