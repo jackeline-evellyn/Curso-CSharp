@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "145. Excecoes personalizadas 3", "145. Excecoes personalizadas 3\145. Excecoes personalizadas 3.csproj", "{207A8649-919C-4219-8E1A-DBD834C77226}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{207A8649-919C-4219-8E1A-DBD834C77226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{207A8649-919C-4219-8E1A-DBD834C77226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{207A8649-919C-4219-8E1A-DBD834C77226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{207A8649-919C-4219-8E1A-DBD834C77226}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6445D2A4-CABA-409A-B57E-0C7B93138276}
+	EndGlobalSection
+EndGlobal
