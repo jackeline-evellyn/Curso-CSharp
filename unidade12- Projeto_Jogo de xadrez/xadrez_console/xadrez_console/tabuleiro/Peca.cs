@@ -23,6 +23,27 @@ namespace tabuleiro
         {
             qtdMovimentos++;
         }
+        //verifica se na matriz de movimentos possiveis existe ao menos um valor
+        public bool existeMovimentosPossiveis()
+        {
+            bool[,] mat = movimentosPossiveis();
+            for(int i=0; i<tab.linhas; i++)
+            {
+                for(int j=0; j<tab.colunas; j++)
+                {
+                    if(mat[i,j] == true)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+        //verifica se a peca pode mover para a posicao de destino
+        public bool podeMoverPara(Posicao pos)
+        {
+            return movimentosPossiveis()[pos.linha, pos.coluna];
+        }
         public abstract bool[,] movimentosPossiveis();
     }
 }

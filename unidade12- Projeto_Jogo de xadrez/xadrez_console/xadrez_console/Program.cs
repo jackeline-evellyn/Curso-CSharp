@@ -14,26 +14,43 @@ namespace xadrez_console
 
                 while (!partida.terminada)
                 {
-                    Console.Clear(); //limpar a tela
-                    Tela.imprimirTabuleiro(partida.tab);
-
-                    Console.WriteLine();
-                    Console.Write("Origem: ");
-                    Posicao origem = Tela.lerPosicaoXadrez().toPosicao(); // ler do teclado uma posição do xadrez
-
-                    //imprimir o tabuleiro com as posições marcadas
-                    bool[,] posicoesPossiveis = partida.tab.peca(origem).movimentosPossiveis();
+                    try
+                    {
+                        Console.Clear(); //limpar a tela
+                        Tela.imprimirTabuleiro(partida.tab);
+                        Console.WriteLine();
+                        Console.WriteLine("Turno: " + partida.turno);
+                        Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
 
 
-                    Console.Clear();
-                    Tela.imprimirTabuleiro(partida.tab, posicoesPossiveis);
+                        Console.WriteLine();
+                        Console.Write("Origem: ");
+                        Posicao origem = Tela.lerPosicaoXadrez().toPosicao(); // ler do teclado uma posição do xadrez
 
-                    Console.WriteLine();
-                    Console.Write("Destino: ");
-                    Posicao destino = Tela.lerPosicaoXadrez().toPosicao(); // ler do teclado uma posição do xadrez
+                        //valida a posicao de origem 
+                        partida.validarPosicaoDeOrigem(origem);
 
-                    partida.executarMovimento(origem, destino);
-                }
+                        //imprimir o tabuleiro com as posições marcadas
+                        bool[,] posicoesPossiveis = partida.tab.peca(origem).movimentosPossiveis();
+
+
+                        Console.Clear();
+                        Tela.imprimirTabuleiro(partida.tab, posicoesPossiveis);
+
+                        Console.WriteLine();
+                        Console.Write("Destino: ");
+                        Posicao destino = Tela.lerPosicaoXadrez().toPosicao(); // ler do teclado uma posição do xadrez
+
+                        //verifica a posicao de destino
+                        partida.validarPosicaoDeDestino(origem, destino);
+
+                        partida.realizaJogada(origem, destino);
+                    } catch(TabuleiroException e)
+                    {
+                        Console.WriteLine(e.Message);
+                        Console.ReadLine();                    
+                    }
+                    }
             }
             catch(TabuleiroException e)
             {
