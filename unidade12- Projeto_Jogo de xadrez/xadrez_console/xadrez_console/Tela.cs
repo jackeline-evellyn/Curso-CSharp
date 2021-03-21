@@ -13,15 +13,8 @@ namespace xadrez_console
                 Console.Write(8-i +" ");
                 for(int j=0; j<tab.colunas; j++)
                 {
-                    if (tab.peca(i, j) == null)
-                    {
-                        Console.Write("- ");
-                    }
-                    else
-                    {
-                        imprimirPeca(tab.peca(i, j));
-                        Console.Write(" ");
-                    }
+                    imprimirPeca(tab.peca(i, j));
+                    
                 }
                 Console.WriteLine();
             }
@@ -36,21 +29,29 @@ namespace xadrez_console
         }
         public static void imprimirPeca(Peca peca)
         {
-            if(peca.cor == Cor.Branca)
+            if (peca == null)
             {
-                //Apenas imprime a peça
-                Console.Write(peca);
+                Console.Write("- ");
             }
             else
             {
-                //cria uma variavel auxiliar que recebe a cor original 
-                ConsoleColor aux = Console.ForegroundColor;
-                //altera para amarelo 
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write(peca);
-                //Retorna para a cor original
-                Console.ForegroundColor = aux;
+                if (peca.cor == Cor.Branca)
+                {
+                    //Apenas imprime a peça
+                    Console.Write(peca);
+                }
+                else
+                {
+                    //cria uma variavel auxiliar que recebe a cor original 
+                    ConsoleColor aux = Console.ForegroundColor;
+                    //altera para amarelo 
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write(peca);
+                    //Retorna para a cor original
+                    Console.ForegroundColor = aux;
 
+                }
+                Console.Write(" ");
             }
         }
         

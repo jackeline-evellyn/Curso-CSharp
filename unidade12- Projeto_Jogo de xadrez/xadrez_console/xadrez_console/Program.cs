@@ -20,6 +20,10 @@ namespace xadrez_console
                     Console.WriteLine();
                     Console.Write("Origem: ");
                     Posicao origem = Tela.lerPosicaoXadrez().toPosicao(); // ler do teclado uma posição do xadrez
+
+                    Console.Clear();
+
+
                     Console.Write("Destino: ");
                     Posicao destino = Tela.lerPosicaoXadrez().toPosicao(); // ler do teclado uma posição do xadrez
 
