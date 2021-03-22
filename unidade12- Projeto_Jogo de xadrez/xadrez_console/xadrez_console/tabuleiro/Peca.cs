@@ -23,6 +23,10 @@ namespace tabuleiro
         {
             qtdMovimentos++;
         }
+        public void decrementarQtdMovimentos()
+        {
+            qtdMovimentos--;
+        }
         //verifica se na matriz de movimentos possiveis existe ao menos um valor
         public bool existeMovimentosPossiveis()
         {
