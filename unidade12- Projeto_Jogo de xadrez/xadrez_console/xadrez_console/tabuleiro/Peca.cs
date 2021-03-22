@@ -44,7 +44,7 @@ namespace tabuleiro
             return false;
         }
         //verifica se a peca pode mover para a posicao de destino
-        public bool podeMoverPara(Posicao pos)
+        public bool movimentoPossivel(Posicao pos)
         {
             return movimentosPossiveis()[pos.linha, pos.coluna];
         }
