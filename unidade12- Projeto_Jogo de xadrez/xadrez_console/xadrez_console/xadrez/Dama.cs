@@ -37,7 +37,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.definirValores(pos.linha, pos.coluna);
+                pos.definirValores(pos.linha, pos.coluna -1);
             }
 
             //direita
