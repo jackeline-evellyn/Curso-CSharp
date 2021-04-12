@@ -6,7 +6,7 @@ using _200.Herdar.Model.Enums;
 
 namespace _200.Herdar.Model.Entities
 {
-    class Circle: Shape
+    class Circle: AbstractShape
     {
         public double Radius { get; set; }
         public override double Area()
