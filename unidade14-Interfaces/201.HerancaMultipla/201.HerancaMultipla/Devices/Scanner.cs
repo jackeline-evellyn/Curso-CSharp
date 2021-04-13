@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _201.HerancaMultipla.Devices
 {
-    class Scanner: Device
+    class Scanner: Device, IScanner
     {
         public override void ProcessDoc(string document)
         {
