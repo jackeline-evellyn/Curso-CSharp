@@ -18,11 +18,11 @@ namespace _210.Hash_Igualdade
 
             Product product = new Product("Notebook", 1200.0);
             Console.WriteLine(a.Contains(product));
+            //Quando o Equals e GetHashCode nao é implementado compara-se referencia de memoria e não o conteúdo
 
             Point p = new Point(5, 10);
             Console.WriteLine(b.Contains(p));
-
-            //Quando o Equals e GetHashCode nao é implementado compara-se referencia de memoria e não o conteúdo
+            //quando o tipo é struct mesmo sem implementar ele compara por conteúdo e não por referência
         }
     }
 }
