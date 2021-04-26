@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Linq;
-
+using System.Collections.Generic;
 namespace _226.Linq
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main( string[] args)
         {
             //3 passos
 
