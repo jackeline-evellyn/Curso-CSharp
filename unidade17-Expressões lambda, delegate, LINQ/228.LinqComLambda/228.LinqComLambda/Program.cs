@@ -15,6 +15,7 @@ namespace _228.LinqComLambda
             {
                 Console.WriteLine(obj);
             }
+            Console.WriteLine();
         }
         static void Main(string[] args)
         {
@@ -40,9 +41,38 @@ namespace _228.LinqComLambda
                 };
 
             var r1 = products.Where(p => p.Category.Tier == 1 && p.Price < 900.0);
-            Console.WriteLine("Tier 1 AND Price < 900");
-                  
-           
+            Print("Tier 1 AND Price < 900", r1);
+
+
+            var r2 = products.Where(p => p.Category.Name == "Tools").Select(p => p.Name);
+            Print("NAME OF PROUCTS FROM TOOLS", r2);
+
+            var r3 = products.Where(p => p.Name[0] == 'C').Select(p => new { p.Name, p.Price, CategoryName = p.Category.Name });
+            Print("NAMES STARTED WITH 'C' AND ANONYMOUS OBJECT", r3);
+
+            var r4 = products.Where(p => p.Category.Tier == 1).OrderBy(p => p.Price).ThenBy(p=> p.Name);
+            Print("TIER 1 ORDER BY PRICE THEN BY NAME", r4);
+
+            var r5 = r4.Skip(2).Take(4); //Pula dois elementos e pega 4 
+            Print("TIER 1 ORDER BY PRICE THEN BY NAME SKIP 2 TAKE 4", r5);
+
+            var r6 = products.First();
+            Console.WriteLine("First test1: " + r6);
+            //First caso nulo pode gerar uma exceção
+
+            var r7 = products.Where(p => p.Price > 3000.0).FirstOrDefault();
+            Console.WriteLine("First or Default test2: " + r7);
+            //First or default caso nao tenha nenhum resultado retorna default
+            Console.WriteLine();
+
+            var r8 = products.Where(p => p.Id == 3).SingleOrDefault();
+            Console.WriteLine("Single or default: "+r8);
+            //Single or Default quando retorna mais que um valor retorna uma exceção
+
+            var r9 = products.Where(p => p.Id == 30).SingleOrDefault();
+            Console.WriteLine("Single or default: " + r9);
+
+
 
         }
     }
