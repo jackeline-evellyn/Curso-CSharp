@@ -72,8 +72,43 @@ namespace _228.LinqComLambda
             var r9 = products.Where(p => p.Id == 30).SingleOrDefault();
             Console.WriteLine("Single or default: " + r9);
 
+            var r10 = products.Max(p => p.Price);
+            Console.WriteLine("Max price: " + r10);
 
+            var r11 = products.Min(p => p.Price);
+            Console.WriteLine("Min price: " + r11);
+
+            var r12 = products.Where(p => p.Category.Id == 1).Sum(p => p.Price);
+            Console.WriteLine("Category 1 Sum prices: " + r12);
+
+            var r13 = products.Where(p => p.Category.Id == 1).Average(p => p.Price);
+            Console.WriteLine("Category 1 Average prices: " + r13);
+
+            var r14 = products.Where(p => p.Category.Id == 5).Select(p => p.Price).DefaultIfEmpty(0.0).Average();
+            Console.WriteLine("Category 5 Average prices: " + r14);
+            //Dessa forma, caso seja nulo a media nao dara uma exceção
+
+            var r15 = products.Where(p => p.Category.Id == 1).Select(p => p.Price).Aggregate(0.0, (x,y) => x+y);
+            Console.WriteLine("Category 1 Agregate sum: "+ r15);
+
+            var r16 = products.Where(p => p.Category.Id == 5).Select(p => p.Price).Aggregate(0.0, (x, y) => x + y);
+            Console.WriteLine("Category 5 Agregate sum: " + r16);
+            Console.WriteLine();
+
+            //Agrupar
+            var r17 = products.GroupBy(p => p.Category);
+            foreach(IGrouping<Category, Product> group in r17)
+            {
+                Console.WriteLine("Category: " + group.Key.Name + ":");
+                foreach(Product p in group)
+                {
+                    Console.WriteLine(p);
+                }
+                Console.WriteLine();
+            }
 
         }
+
+        
     }
 }
